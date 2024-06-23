@@ -1,9 +1,6 @@
 console.log("in worker.js");
 
-import { pipeline } from '@xenova/transformers';
+import _ from 'lodash';
 
-// Allocate a pipeline for sentiment-analysis
-let pipe = await pipeline('sentiment-analysis');
-
-let out = await pipe('I love transformers!');
-// [{'label': 'POSITIVE', 'score': 0.999817686}]
+const test = _.sample([1, 2, 3, 4]);
+console.log({test});
